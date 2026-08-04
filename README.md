@@ -4,7 +4,7 @@
 
 This contains everything you need to run the your app.
 
-Application live URL : https://github.com/Gokish/bugflow_trcker.git
+Application live URL : [https://github.com/Gokish/bugflow_trcker.git](http://bugflowtrcker-production.up.railway.app/)
 
 # 🐞 BugFlow — Graph-Native Defect Tracking & Impact Analysis System
 
