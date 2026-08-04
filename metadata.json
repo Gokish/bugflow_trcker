@@ -1,0 +1,6 @@
+{
+  "name": "BugFlow - Bug Dependency Tracker",
+  "description": "Graph database powered Bug Dependency Tracker with Cypher query playground, interactive graph traversal, dependency impact analysis, and release management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
