@@ -1,20 +1,14 @@
-/**
- * BugFlow Express API Server
- * Runs on Port 3000 in accordance with AI Studio Container ingress constraints.
- */
-
 import express, { Request, Response } from 'express';
 import path from 'path';
-import { fileURLToPath } from 'url';
 import { createServer as createViteServer } from 'vite';
 import { graphEngine } from './src/data/graphEngine.js';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const __dirname = process.cwd();
+
 
 async function startServer() {
   const app = express();
-  const PORT = 3000;
+  // const PORT = 3000;
 
   app.use(express.json());
 
@@ -236,8 +230,10 @@ async function startServer() {
     });
   }
 
-  app.listen(PORT, '0.0.0.0', () => {
-    console.log(`[BugFlow Server] Running on http://0.0.0.0:${PORT}`);
+  const PORT = Number(process.env.PORT) || 3000;
+
+  app.listen(PORT, () => {
+   console.log(`Server running on port ${PORT}`);
   });
 }
 
